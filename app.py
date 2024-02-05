@@ -42,7 +42,7 @@ if file:
 if st.button("送信"):
 
     response = requests.post(
-        "https://dog-or-cat-g6g6.onrender.com",
+        "https://dog-or-cat-g6g6.onrender.com/prediction",
         files=files,
     )
     response_json = response.json()
